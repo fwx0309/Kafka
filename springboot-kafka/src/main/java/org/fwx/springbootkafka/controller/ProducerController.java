@@ -12,7 +12,7 @@ public class ProducerController {
     @Autowired
     KafkaTemplate<String, String> kafka;
 
-    @RequestMapping("/atguigu")
+    @RequestMapping("/fwx")
     public String data(String msg){
         // 通过kafka发送出去
         kafka.send("first", msg);
